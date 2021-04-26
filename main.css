@@ -44,4 +44,12 @@ div > div {
 
 .col {
   width: 90%;
+  text-align: left;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.col h3 {
+  text-align: center;
+  color: black;
 }

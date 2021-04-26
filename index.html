@@ -36,36 +36,84 @@
     <!-- End HTML -->
 
     <div class="wrapper">
-      <div class="col" markdown="1">
-        ```html
-        <div>
-          <h1>Two Truths and a Lie</h1>
-          <div>
-            <h3>Lived Abroad</h3>
-            <p>
-              I lived in the Philippines for a while, during my teenage years in
-              the late 90s and early 00s.
-            </p>
-          </div>
-          <div>
-            <h3>Petting Zoo</h3>
-            <p>
-              I have two dogs, four cats, a cockatiel, and a Reticulated Python
-              at home.
-            </p>
-          </div>
-          <div>
-            <h3>Teenage Nerdface</h3>
-            <p>
-              When I was 14 I started learning HTML & CSS so I could build
-              fansites for my favorite TV shows, on a platform called GeoCities.
-            </p>
-          </div>
-        </div>
-        ```
+      <div class="col">
+        <h3>HTML Code</h3>
+        <pre>
+          <code>
+&lt;div&gt;
+  &lt;h1&gt;Two Truths and a Lie&lt;/h1&gt;
+  &lt;div&gt;
+    &lt;h3&gt;Lived Abroad&lt;/h3&gt;
+    &lt;p&gt;
+      I lived in the Philippines for a while,
+      during my teenage years in the
+      late 90s and early 00s.
+    &lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;h3&gt;Petting Zoo&lt;/h3&gt;
+    &lt;p&gt;
+      I have two dogs, four cats, a cockatiel,
+      and a Reticulated Python at
+      home.
+    &lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;h3&gt;Teenage Nerdface&lt;/h3&gt;
+    &lt;p&gt;
+        When I was 14 I started learning HTML &amp;
+        CSS so I could build fansites for my
+        favorite TV shows, on a platform called
+        GeoCities.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+          </code>
+        </pre>
       </div>
       <div class="col">
-        <pre><code> </code></pre>
+        <h3>CSS</h3>
+        <pre>
+          <code>
+          h1 {
+            display: block;
+            color: lightgreen;
+            text-align: center;
+            width: 100%;
+          }
+          
+          h3 {
+            color: blue;
+          }
+          
+          p {
+            color: red;
+          }
+          
+          div {
+            text-align: center;
+            padding: 1em;
+            margin: 1em;
+          }
+          
+          body > div:nth-of-type(1) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            border: 4px solid black;
+            border-radius: 10px;
+            background-color: grey;
+          }
+          
+          div > div {
+            background-color: lightgrey;
+            border: 2px dashed black;
+            border-radius: 10px;
+            width: 25%;
+          }
+          
+        </code>
+      </pre>
       </div>
     </div>
   </body>
