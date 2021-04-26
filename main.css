@@ -1,0 +1,47 @@
+h1 {
+  display: block;
+  color: lightgreen;
+  text-align: center;
+  width: 100%;
+}
+
+h3 {
+  color: blue;
+}
+
+p {
+  color: red;
+}
+
+div {
+  text-align: center;
+  padding: 1em;
+  margin: 1em;
+}
+
+body > div:nth-of-type(1) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 4px solid black;
+  border-radius: 10px;
+  background-color: grey;
+}
+
+div > div {
+  background-color: lightgrey;
+  border: 2px dashed black;
+  border-radius: 10px;
+  width: 25%;
+}
+
+/* End CSS */
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.col {
+  width: 90%;
+}
